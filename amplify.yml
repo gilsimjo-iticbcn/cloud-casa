@@ -3,10 +3,6 @@ frontend:
   phases:
     preBuild:
       commands:
-        # Descarga e instala la última versión de Hugo
-        - wget https://github.com/gohugoio/hugo/releases/download/v0.122.0/hugo_0.122.0_Linux-64bit.tar.gz
-        - tar -xzf hugo_0.122.0_Linux-64bit.tar.gz
-        - mv hugo /usr/local/bin/hugo
         # Verifica la instalación
         - hugo version
     build:
