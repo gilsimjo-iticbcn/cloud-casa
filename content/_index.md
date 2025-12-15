@@ -3,4 +3,4 @@
 <!-- Importar l'script -->
 <script src="/js/counter.js"></script>
 
-hola pepe mi cv
+hola pepe mi cv prueba nueva
