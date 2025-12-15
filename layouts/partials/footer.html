@@ -1,0 +1,17 @@
+<!-- Contador de Visitas -->
+<div style="margin-top: 20px; text-align: center;">
+  <p>Visitas: <span id="visitor-counter" style="font-weight: bold;">Cargando...</span></p>
+</div>
+
+<script>
+// Llama a tu API Gateway
+fetch('https://tbzlml69q6.execute-api.us-east-1.amazonaws.com/prod') // <-- TU URL AQUÍ
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('visitor-counter').textContent = data.visitCount;
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    document.getElementById('visitor-counter').textContent = 'Error';
+  });
+</script>
